@@ -38,7 +38,7 @@ class Permission {
 
   /// Android: Fine and Coarse Location
   /// iOS: CoreLocation (Always and WhenInUse)
-  static const location = PermissionWithService._(3);
+  // static const location = PermissionWithService._(3);
 
   /// Android:
   ///   When running on Android < Q: Fine and Coarse Location
@@ -49,11 +49,11 @@ class Permission {
   ///   the `Àllow While Using App` option on the popup.
   ///   After allowing the permission the user can request the `locationAlways`
   ///   permission and can click on the `Change To Always Allow` option.
-  static const locationAlways = PermissionWithService._(4);
+  // static const locationAlways = PermissionWithService._(4);
 
   /// Android: Fine and Coarse Location
   /// iOS: CoreLocation - WhenInUse
-  static const locationWhenInUse = PermissionWithService._(5);
+  // static const locationWhenInUse = PermissionWithService._(5);
 
   /// Android: None
   /// iOS: MPMediaLibrary
@@ -61,7 +61,7 @@ class Permission {
 
   /// Android: Microphone
   /// iOS: Microphone
-  static const microphone = Permission._(7);
+  // static const microphone = Permission._(7);
 
   /// Android: Phone
   /// iOS: Nothing
@@ -83,15 +83,15 @@ class Permission {
 
   /// Android: Body Sensors
   /// iOS: CoreMotion
-  static const sensors = Permission._(12);
+  // static const sensors = Permission._(12);
 
   /// Android: Sms
   /// iOS: Nothing
-  static const sms = Permission._(13);
+  // static const sms = Permission._(13);
 
   /// Android: Microphone
   /// iOS: Speech
-  static const speech = Permission._(14);
+  // static const speech = Permission._(14);
 
   /// Android: External Storage
   /// iOS: Access to folders like `Documents` or `Downloads`. Implicitly
@@ -112,14 +112,14 @@ class Permission {
   /// When running on Android Q and above: Activity Recognition
   /// When running on Android < Q: Nothing
   /// iOS: Nothing
-  static const activityRecognition = Permission._(19);
+  // static const activityRecognition = Permission._(19);
 
   /// The unknown only used for return type, never requested
   static const unknown = Permission._(20);
 
   /// iOS 13 and above: The authorization state of Core Bluetooth manager.
   /// When running < iOS 13 or Android this is always allowed.
-  static const bluetooth = Permission._(21);
+  // static const bluetooth = Permission._(21);
 
   /// Android: Allows an application a broad access to external storage in
   /// scoped storage.
@@ -165,50 +165,50 @@ class Permission {
   ///Android: Allows the user to look for Bluetooth devices
   ///(e.g. BLE peripherals).
   ///iOS: Nothing
-  static const bluetoothScan = Permission._(28);
+  // static const bluetoothScan = Permission._(28);
 
   ///Android: Allows the user to make this device discoverable to other
   ///Bluetooth devices.
   ///iOS: Nothing
-  static const bluetoothAdvertise = Permission._(29);
+  // static const bluetoothAdvertise = Permission._(29);
 
   ///Android: Allows the user to connect with already paired Bluetooth devices.
   ///iOS: Nothing
-  static const bluetoothConnect = Permission._(30);
+  // static const bluetoothConnect = Permission._(30);
 
   /// Returns a list of all possible [PermissionGroup] values.
   static const List<Permission> values = <Permission>[
     calendar,
     camera,
     contacts,
-    location,
-    locationAlways,
-    locationWhenInUse,
+    // location,
+    // locationAlways,
+    // locationWhenInUse,
     mediaLibrary,
-    microphone,
+    // microphone,
     phone,
     photos,
     photosAddOnly,
     reminders,
-    sensors,
-    sms,
-    speech,
+    // sensors,
+    // sms,
+    // speech,
     storage,
     ignoreBatteryOptimizations,
     notification,
     accessMediaLocation,
-    activityRecognition,
+    // activityRecognition,
     unknown,
-    bluetooth,
+    // bluetooth,
     manageExternalStorage,
     systemAlertWindow,
     requestInstallPackages,
     appTrackingTransparency,
     criticalAlerts,
     accessNotificationPolicy,
-    bluetoothScan,
-    bluetoothAdvertise,
-    bluetoothConnect,
+    // bluetoothScan,
+    // bluetoothAdvertise,
+    // bluetoothConnect,
   ];
 
   static const List<String> _names = <String>[
